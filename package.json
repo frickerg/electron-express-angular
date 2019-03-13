@@ -4,16 +4,16 @@
   "main": "main.js",
   "scripts": {
     "start": "npm run build && electron main",
-    "win32": "npm run build && electron-packager . myApp --platform=win32 --arch=ia32",
-    "win64": "npm run build && electron-packager . myApp --platform=win32 --arch=x64",
-    "linux32": "npm run build && electron-packager . myApp --platform=linux --arch=ia32",
-    "linux64": "npm run build && electron-packager . myApp --platform=linux --arch=x64",
-    "osx": "npm run build && electron-packager . myApp --platform=darwin --arch=x64",
+    "win32": "npm run build && electron-packager . --platform=win32 --arch=ia32",
+    "win64": "npm run build && electron-packager . --platform=win32 --arch=x64",
+    "linux32": "npm run build && electron-packager . --platform=linux --arch=ia32",
+    "linux64": "npm run build && electron-packager . --platform=linux --arch=x64",
+    "osx": "npm run build && electron-packager . --platform=darwin --arch=x64",
     "ng": "ng",
     "build": "pushd angular && ng build && popd",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "echo \"Error: no e2e specified\" && exit 1",
+    "lint": "ng lint"
   },
   "devDependencies": {
     "electron": "^4.0.8",
@@ -29,7 +29,6 @@
     "typescript": "~3.2.2"
   },
   "dependencies": {
-    "electron-packager": "^13.1.1",
     "@angular/animations": "~7.2.0",
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
@@ -38,14 +37,15 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
-    "core-js": "^2.5.4",
-    "rxjs": "~6.3.3",
-    "tslib": "^1.9.0",
-    "zone.js": "~0.8.26",
     "body-parser": "^1.18.3",
     "compression": "^1.7.3",
+    "core-js": "^2.5.4",
+    "electron-packager": "^13.1.1",
     "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "rxjs": "~6.3.3",
+    "tslib": "^1.9.0",
+    "zone.js": "~0.8.26"
   },
   "private": true
 }
