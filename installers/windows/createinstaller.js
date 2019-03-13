@@ -14,7 +14,7 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'electron-tutorial-app-win32-x64/'),
+    appDirectory: path.join(outPath, 'electron-express-angular-win32-x64/'),
     authors: 'Guillaume Fricker',
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
