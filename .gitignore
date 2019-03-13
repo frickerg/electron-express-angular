@@ -4,7 +4,7 @@
 **/dist
 **/tmp
 /out-tsc
-/electron/electron-express-angular-**
+/windows/electron-express-angular-**
 
 # dependencies
 **/node_modules

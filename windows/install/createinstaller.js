@@ -11,7 +11,7 @@ getInstallerConfig()
 function getInstallerConfig() {
   console.log('creating windows installer')
   const rootPath = path.join('./')
-  const outPath = path.join(rootPath, 'electron')
+  const outPath = path.join(rootPath, 'windows')
 
   return Promise.resolve({
     appDirectory: path.join(outPath, 'electron-express-angular-win32-x64'),

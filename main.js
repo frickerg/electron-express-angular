@@ -1,7 +1,7 @@
 const path = require('path')
 const {ipcMain} = require('electron')
 
-const setupEvents = require(path.join(__dirname, 'electron', 'windows', 'setupevents'));
+const setupEvents = require(path.join(__dirname, 'windows', 'install', 'setupevents'));
 
 if (setupEvents.handleSquirrelEvent()) {
   // squirrel event handled and app will exit in 1000ms, so don't do anything else

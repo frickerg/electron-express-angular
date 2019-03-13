@@ -5,11 +5,11 @@
   "main": "main.js",
   "scripts": {
     "start": "npm run build && electron main",
-    "win32": "npm run build && electron-packager . --asar --platform=win32 --arch=ia32 --prune=true --out=electron",
-    "win64": "npm run build && electron-packager . --asar --platform=win32 --arch=x64 --prune=true --out=electron",
-    "linux32": "npm run build && electron-packager . --asar --platform=linux --arch=ia32 --prune=true --out=electron",
-    "linux64": "npm run build && electron-packager . --asar --platform=linux --arch=x64 --prune=true --out=electron",
-    "osx": "npm run build && electron-packager . --asar --platform=darwin --arch=x64 --prune=true --out=electron",
+    "win32": "npm run build && electron-packager . --asar --platform=win32 --arch=ia32 --prune=true --out=windows",
+    "win64": "npm run build && electron-packager . --asar --platform=win32 --arch=x64 --prune=true --out=windows",
+    "linux32": "npm run build && electron-packager . --asar --platform=linux --arch=ia32 --prune=true --out=windows",
+    "linux64": "npm run build && electron-packager . --asar --platform=linux --arch=x64 --prune=true --out=windows",
+    "osx": "npm run build && electron-packager . --asar --platform=darwin --arch=x64 --prune=true --out=windows",
     "ng": "ng",
     "build": "pushd angular && ng build && popd",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -49,8 +49,5 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
-  "extraFiles": [
-    "electron/windows/setupevents.js"
-  ],
   "private": true
 }
