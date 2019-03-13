@@ -12,9 +12,9 @@
     "osx": "npm run angular-build && electron-packager . myApp --platform=darwin --arch=x64"
   },
   "devDependencies": {
-    "electron": "^1.7.5"
+    "electron": "^4.0.8"
   },
   "dependencies": {
-    "electron-packager": "^8.7.2"
+    "electron-packager": "^13.1.1"
   }
 }
