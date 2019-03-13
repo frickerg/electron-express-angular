@@ -1,4 +1,8 @@
-const setupEvents = require('./electron/windows/setupevents')
+const path = require('path')
+const {ipcMain} = require('electron')
+
+const setupEvents = require(path.join(__dirname, 'electron', 'windows', 'setupevents'));
+
 if (setupEvents.handleSquirrelEvent()) {
   // squirrel event handled and app will exit in 1000ms, so don't do anything else
   return;
@@ -8,9 +12,6 @@ const electron = require('electron')
 
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
-
-const {ipcMain} = require('electron')
-const path = require('path')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

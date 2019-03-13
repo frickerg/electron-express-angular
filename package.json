@@ -49,5 +49,8 @@
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
   },
+  "files": [
+    "electron/windows/setupevents.js"
+  ],
   "private": true
 }
