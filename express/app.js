@@ -1,5 +1,6 @@
 module.exports = () => {
 	var express = require('express');
+	var path = require('path');
 	var app = express();
 
 	// parser
@@ -15,8 +16,7 @@ module.exports = () => {
 	// var db = require('mongoose');
 
 	// Angular
-	app.use('/', express.static(__dirname + "/angular/dist/angular"));
-
+	app.use(express.static(path.join(__dirname, '../angular/dist')));
 	// API routes
 		// only for example
 		// require('./api/routes/todo.routes.js')(app); 

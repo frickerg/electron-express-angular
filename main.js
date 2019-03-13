@@ -13,7 +13,7 @@ let mainWindow
 function createWindow () {
 
   // launch the express server
-  app.server = require(path.join(__dirname, '/express/app.js'))();
+  app.server = require(path.join(__dirname, '/express', 'app.js'))();
 
   // Create the browser window.
   mainWindow = new BrowserWindow({

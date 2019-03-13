@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "angular-build": "cd express/angular && npm run build",
+    "angular-build": "cd angular && npm run build",
     "start": "npm run angular-build && electron main",
     "win32": "npm run angular-build && electron-packager . myApp --platform=win32 --arch=ia32",
     "win64": "npm run angular-build && electron-packager . myApp --platform=win32 --arch=x64",
