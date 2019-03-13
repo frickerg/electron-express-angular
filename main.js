@@ -1,16 +1,18 @@
-const setupEvents = require('./electron/windows/setupevents')
+const setupEvents = require('./installers/setupEvents')
 if (setupEvents.handleSquirrelEvent()) {
   // squirrel event handled and app will exit in 1000ms, so don't do anything else
   return;
 }
 
+
 const electron = require('electron')
-
+// Module to control application life.
 const app = electron.app
-const BrowserWindow = electron.BrowserWindow
-
 const {ipcMain} = require('electron')
-const path = require('path')
+var path = require('path')
+
+// Module to create native browser window.
+const BrowserWindow = electron.BrowserWindow
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

@@ -8,17 +8,17 @@ getInstallerConfig()
     process.exit(1)
   })
 
-function getInstallerConfig() {
+function getInstallerConfig () {
   console.log('creating windows installer')
   const rootPath = path.join('./')
-  const outPath = path.join(rootPath, 'electron')
+  const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    appDirectory: path.join(outPath, 'electron-express-angular-win32-x64'),
+    appDirectory: path.join(outPath, 'electron-express-angular-win32-x64/'),
     authors: 'Guillaume Fricker',
     noMsi: true,
-    outputDirectory: path.join(outPath, 'thegoat'),
-    setupExe: 'boilerplate-installer-win32.exe',
+    outputDirectory: path.join(outPath, 'windows-installer'),
+    setupExe: 'ElectronTutorialAppInstaller.exe',
     setupIcon: path.join(rootPath, 'angular', 'src', 'favicon.ico')
   })
 }
