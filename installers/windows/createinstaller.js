@@ -18,7 +18,7 @@ function getInstallerConfig () {
     authors: 'Guillaume Fricker',
     noMsi: true,
     outputDirectory: path.join(outPath, 'windows-installer'),
-    setupExe: 'ElectronTutorialAppInstaller.exe',
+    setupExe: 'boilerplate-installer-win32.exe',
     setupIcon: path.join(rootPath, 'angular', 'src', 'favicon.ico')
   })
 }
